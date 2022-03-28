@@ -2,9 +2,14 @@ module capregsoft.com/template
 
 go 1.17
 
-require github.com/labstack/echo v3.3.10+incompatible
+require (
+	github.com/labstack/echo v3.3.10+incompatible
+	github.com/pkg/errors v0.9.1
+)
 
 require (
+	github.com/go-sql-driver/mysql v1.6.0 // indirect
+	github.com/jmoiron/sqlx v1.3.4 // indirect
 	github.com/labstack/gommon v0.3.1 // indirect
 	github.com/mattn/go-colorable v0.1.11 // indirect
 	github.com/mattn/go-isatty v0.0.14 // indirect
