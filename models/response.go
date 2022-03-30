@@ -6,15 +6,17 @@ type Response struct {
 	Data    interface{} `json:"data"`
 }
 type UserDataResponse struct {
-	UserId *int64  `json:"user-id" db:"user_id"`
-	Name   *string `json:"name" db:"name"`
-	Email  *string `json:"email" db:"email"`
+	UserId      *int    `json:"user_id" db:"user_id"`
+	Name        *string `json:"name" db:"name"`
+	Email       *string `json:"email" db:"email"`
+	PhoneNumber *string `json:"phone_number" db:"phone_number"`
 }
 
 func NewUserDataResponse() *UserDataResponse {
 	return &UserDataResponse{
-		UserId: new(int64),
-		Name:   new(string),
-		Email:  new(string),
+		UserId:      new(int),
+		Name:        new(string),
+		Email:       new(string),
+		PhoneNumber: new(string),
 	}
 }

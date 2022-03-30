@@ -7,6 +7,7 @@ import (
 
 type TemplateApi interface {
 	CreateUserId(userIdData *models.UserData) (*models.UserDataResponse, error)
+	GetUserDataById(userId int) (*models.UserDataResponse, error)
 }
 type TemplateApiImpl struct {
 	db *db.TemplateDBImpl

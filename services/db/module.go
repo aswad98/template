@@ -3,11 +3,14 @@ package db
 import (
 	"fmt"
 
+	"capregsoft.com/template/models"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jmoiron/sqlx"
 )
 
 type TemplateDB interface {
+	CreateUserIdDB(userData *models.UserData) (*models.UserDataResponse, error)
+	GetUserDataByIdDB(userId int) (*models.UserDataResponse, error)
 }
 type TemplateDBImpl struct {
 	dbConn *sqlx.DB
