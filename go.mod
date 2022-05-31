@@ -8,8 +8,8 @@ require (
 )
 
 require (
-	github.com/go-sql-driver/mysql v1.6.0 // indirect
-	github.com/jmoiron/sqlx v1.3.4 // indirect
+	github.com/go-sql-driver/mysql v1.6.0
+	github.com/jmoiron/sqlx v1.3.4
 	github.com/labstack/gommon v0.3.1 // indirect
 	github.com/mattn/go-colorable v0.1.11 // indirect
 	github.com/mattn/go-isatty v0.0.14 // indirect
